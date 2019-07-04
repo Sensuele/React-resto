@@ -11,7 +11,7 @@ const CartTable = ({items, deleteFromCart}) => {
                 {
                     items.map(item => {
                         const {title, price, url, id, counter } = item;
-                        const count = counter > 1 ? ` x ${counter}` : "";
+                        const count = counter > 1 ? `  x ${counter}` : "";
                         return (
                             <div key={id} className="cart__item">
                                 <img src={url} className="cart__item-img" alt={title}></img>
